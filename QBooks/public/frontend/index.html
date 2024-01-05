@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBooks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <link rel="icon" type="images/png" href="images/book-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="contain-navbar">
+            <div class="header">
+                <video autoplay loop muted plays-inline class="bg-video">
+                    <source src="images/book.mp4" type="video/mp4">
+                </video>
+
+                <nav class="navbar">
+
+                    <input type="checkbox" id="check">
+                    <label for="check" class="icon-toggle">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                        <i class="fa-solid fa-xmark" id="close-icon"></i>
+                    </label>
+
+                    <ul class="navbar-navv">
+                        <li><a href="#" id="nav-link" style="color: rgb(238, 232, 170);">Trang chủ</a></li>
+                        <li><a href="#" id="nav-link">Thể loại</a>
+                            <ul class="sub-menu">
+                                <li><a href="" id="nav-link-menu">Menu 2.1</a></li>
+                                <li><a href="" id="nav-link-menu">Menu 2.2</a></li>
+                                <li><a href="" id="nav-link-menu">Menu 2.3</a></li>
+                                <li><a href="" id="nav-link-menu" style="border-bottom: none;">Menu 2.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="nav-link">Liên hệ</a></li>
+                        <li><a href="#" class="infor" id="nav-link">Đăng Nhập</a></li>
+                        <li><a href="#" class="infor" id="nav-link">Giỏ Hàng</a></li>
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="Hội sách 2023 trở lại!" />
+                        <button id="eye"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="icon-nav">
+                        <div class="ico-nav">
+                            <div class="ico-user">
+                                <a href="#">
+                                    <i class="fa-solid fa-user" id="icon"></i> Đăng nhập
+                                </a>
+                            </div>
+                            <div class="icon-cart">
+                                <a href="#">
+                                    <i class="fa-solid fa-cart-shopping" id="icon"></i> Giỏ hàng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="content">
+                    <p>QBOOKS</p>
+                    <h1>Hàng ngàn quyển sách đang chờ đợi bạn</h1>
+                    <div class="btn">
+                        <a href="#gth">Khám phá ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gth" id="gth">
+            <div class="left">
+                Sản phẩm bán chạy
+            </div>
+            <div class="align-text-top" id="right">
+                <a href="#" class="more">
+                    Xem thêm <i class="fa-solid fa-chevron-right" id="ico-next"></i><i class="fa-solid fa-chevron-right"
+                        id="ico-next"></i>
+                </a>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card"><a href="index.php?quanly=sanpham&id=1" class="book-detail">
+                                <img src="images/muonkiepnhansinh.webp" class="card-img-top" alt="Muôn Kiếp Nhân Sinh">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Muôn Kiếp Nhân Sinh
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">99.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -41%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/muonkiepnhansinh2.webp" class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Muôn Kiếp Nhân Sinh 2
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">159.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -41%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/muonkiepnhansinh3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Muôn Kiếp Nhân Sinh 3
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">132.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -39%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/caycamngotcuatoi.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Cây Cam Ngọt Của Tôi
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">70.200<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -35%
+                                        </span>
+                                    </h5>
+                                    <div class="cart-ico-container">
+                                        <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"><a href="#" class="book-detail">
+                            <img src="images/thongminhtrengiuong.png" class="card-img-top" alt="Thông Minh Trên Giường">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Trí Thông Minh Trên Giường
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="view">
+                                        Đã bán 3,5k
+                                    </span>
+                                </div>
+                                </p>
+                                <h5 class="card-price">131.400<span class="align-text-bottom" id="unit">đ</span>
+                                    <span class="sale">
+                                        -40%
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="cart-ico-container">
+                                <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4" id="img-banner-contain">
+                        <img src="images/tuoitredanggiabaonhieu.jpg" alt="Tuổi Trẻ Đáng Giá Bao Nhiêu?"
+                            class="img-banner">
+                    </div>
+                    <div class="col-sm-8" id="banner-content">
+                        <div class="banner-title">
+                            Tuổi Trẻ Đáng Giá Bao Nhiêu?
+                        </div>
+                        <div class="banner-content">
+                            “Tuổi trẻ đáng giá bao nhiêu?” của tác giả Rosie Nguyễn là một trong những cuốn sách
+                            self-help “gối đầu giường” của nhiều bạn trẻ hiện nay. Với lời văn bình dị, gần gũi, cuốn
+                            sách miêu tả một cách chân thật, rõ nét về tâm lý của giới trẻ, giúp các bạn tự tin chuẩn bị
+                            hành trang cho những trải nghiệm thời thanh xuân của mình.
+                        </div>
+                        <a href="#" class="btn-info">Tìm hiểu thêm</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gth">
+            <div class="left">
+                Văn học và hơn thế nữa
+            </div>
+            <div class="align-text-top" id="right">
+                <a href="#" class="more">
+                    Xem thêm <i class="fa-solid fa-chevron-right" id="ico-next"></i><i class="fa-solid fa-chevron-right"
+                        id="ico-next"></i>
+                </a>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/muahekhongten.webp" class="card-img-top" alt="Mùa Hè Không Tên">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Mùa Hè Không Tên
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">109.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -16%
+                                        </span>
+                                    </h5>
+
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/nguoiduadieu.webp" class="card-img-top" alt="Người Đua Diều">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Người Đua Diều
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">83.850<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -35%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/damtreodaiduongden.webp" class="card-img-top"
+                                    alt="Đám Trẻ Ở Đại Dương Đen">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Đám Trẻ Ở Đại Dương Đen
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 1,6k
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">71.280<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -28%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/nhagiakim.webp" class="card-img-top" alt="Nhà Giả Kim">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Nhà Giả Kim
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">51.350<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -35%
+                                        </span>
+                                    </h5>
+                                    <div class="cart-ico-container">
+                                        <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"><a href="#" class="book-detail">
+                            <img src="images/khamnghiem.webp" class="card-img-top" alt="Ghi Chép Pháp Y">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Ghi Chép Pháp Y
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="view">
+                                        Đã bán 3,5k
+                                    </span>
+                                </div>
+                                </p>
+                                <h5 class="card-price">90.000<span class="align-text-bottom" id="unit">đ</span>
+                                    <span class="sale">
+                                        -28%
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="cart-ico-container">
+                                <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gth">
+            <div class="left">
+                Bí quyết kinh doanh
+            </div>
+            <div class="align-text-top" id="right">
+                <a href="#" class="more">
+                    Xem thêm <i class="fa-solid fa-chevron-right" id="ico-next"></i><i class="fa-solid fa-chevron-right"
+                        id="ico-next"></i>
+                </a>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/thinkgrow.webp" class="card-img-top" alt="Nghĩ Giàu Và Làm Giàu">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Nghĩ Giàu Và Làm Giàu
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">79.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -28%
+                                        </span>
+                                    </h5>
+
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/conlocquantri.webp" class="card-img-top" alt="Cơn Lốc Quản Trị">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Cơn Lốc Quản Trị
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 1,2k
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">111.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -21%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/ketoanviahe.webp" class="card-img-top" alt="Kế Toán Vỉa Hè">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Kế Toán Vỉa Hè
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">169.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -15%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/economix.webp" class="card-img-top" alt="Economix">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Economix
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">97.800<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -36%
+                                        </span>
+                                    </h5>
+                                    <div class="cart-ico-container">
+                                        <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"><a href="#" class="book-detail">
+                            <img src="images/tamlyhocvetien.webp" class="card-img-top" alt="Tâm Lý Học Về Tiền">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Tâm Lý Học Về Tiền
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="view">
+                                        Đã bán 1,1k
+                                    </span>
+                                </div>
+                                </p>
+                                <h5 class="card-price">117.180<span class="align-text-bottom" id="unit">đ</span>
+                                    <span class="sale">
+                                        -38%
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="cart-ico-container">
+                                <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-5">
+            <div class="row px-xl-5 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border-custom mb-4" style="padding: 30px;">
+                        <h2 class="fa fa-check custom-check m-0 mr-3"></h2>
+                        <h5 class="font-weight-semi-bold m-0">&ensp;Sản Phẩm Chất Lượng</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border-custom mb-4" style="padding: 30px;">
+                        <h2 class="fa fa-shipping-fast custom-check m-0 mr-2"></h2>
+                        <h5 class="font-weight-semi-bold m-0">&ensp;Vận Chuyển Miễn Phí</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border-custom mb-4" style="padding: 30px;">
+                        <h2 class="fas fa-exchange-alt custom-check m-0 mr-3"></h2>
+                        <h5 class="font-weight-semi-bold m-0">&ensp;Hoàn Trả Dễ Dàng</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border-custom mb-4" style="padding: 30px;">
+                        <h2 class="fa fa-phone-volume custom-check m-0 mr-3"></h2>
+                        <h5 class="font-weight-semi-bold m-0">&ensp;Hỗ Trợ 24/7</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gth" id="gth">
+            <div class="left">
+                Ngoại ngữ không khó đã có từ điển lo
+            </div>
+            <div class="align-text-top" id="right">
+                <a href="#" class="more">
+                    Xem thêm <i class="fa-solid fa-chevron-right" id="ico-next"></i><i class="fa-solid fa-chevron-right"
+                        id="ico-next"></i>
+                </a>
+            </div>
+        </div>
+        <div class="sanpham">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card"><a href="index.php?quanly=sanpham&id=1" class="book-detail">
+                                <img src="images/tienganh.webp" class="card-img-top" alt="Từ Điển Việt Anh">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Từ Điển Việt Anh
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 1.3k
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">135.000<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -3%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/tiengnhat.webp" class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Tự Học Viết Tiếng Nhật
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 1.7k
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">40.800<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -35%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/tiengphap.webp" class="card-img-top" alt="Từ Điển Pháp - Việt">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Từ Điển Pháp - Việt
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 2k
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">81.200<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -18%
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="cart-ico-container">
+                                    <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><a href="#" class="book-detail">
+                                <img src="images/caycamngotcuatoi.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Cây Cam Ngọt Của Tôi
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="view">
+                                            Đã bán 5k+
+                                        </span>
+                                    </div>
+                                    </p>
+                                    <h5 class="card-price">70.200<span class="align-text-bottom" id="unit">đ</span>
+                                        <span class="sale">
+                                            -35%
+                                        </span>
+                                    </h5>
+                                    <div class="cart-ico-container">
+                                        <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card"><a href="#" class="book-detail">
+                            <img src="images/thongminhtrengiuong.png" class="card-img-top" alt="Thông Minh Trên Giường">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Trí Thông Minh Trên Giường
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="view">
+                                        Đã bán 3,5k
+                                    </span>
+                                </div>
+                                </p>
+                                <h5 class="card-price">131.400<span class="align-text-bottom" id="unit">đ</span>
+                                    <span class="sale">
+                                        -40%
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="cart-ico-container">
+                                <i class="fa-solid fa-cart-plus" id="cart-ico"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <div class="text-center p-4" id="footer-end">
+            © 2023 Copyright QBooks
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Black+Ops+One&family=Fira+Sans:wght@400;500&family=Indie+Flower&family=Kufam:ital,wght@0,400;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;1,6..12,400;1,6..12,600&family=Paytone+One&family=Prompt&family=Tilt+Neon&family=Tilt+Prism&display=swap');
+
+
+
+.bodyy {
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 27px 0;
+}
+
+.container-loginn {
+    background-color: rgb(255, 250, 240);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container-loginn p {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container-loginn a {
+    color: rgba(86, 45, 15, 0.911);
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container-loginn a:hover{
+    color: rgb(247, 208, 129);
+}
+
+.container-loginn button {
+    background-color: rgb(247, 208, 129);
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 15px;
+}
+
+.container-loginn button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container-loginn button.hidden:hover {
+    background-color: #fff;
+    color: rgb(247, 208, 129);
+    transition: 0.2s;
+}
+#btn-loginn{
+    background-color: rgba(86, 45, 15, 0.911);
+}
+#btn-loginn:hover{
+    background-color: transparent;
+    border-color: rgba(86, 45, 15, 0.911);
+    color: rgba(86, 45, 15, 0.911);
+    transition: 0.2s;
+}
+#h1b{
+    color: rgba(86, 45, 15, 0.911);
+}
+
+.container-loginn form {
+    background-color: rgb(255, 250, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container-loginn input {
+    background-color: #fff;
+    color: rgba(57, 30, 10, 0.911);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    outline: none;
+}
+
+.form-containerr {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-inn {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container-loginn.active .sign-inn {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container-loginn.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.togglee-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container-loginn.active .togglee-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.togglee {
+    background-color: rgb(247, 208, 129);
+    height: 100%;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container-loginn.active .togglee {
+    transform: translateX(50%);
+}
+
+.togglee-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.togglee-left {
+    /* left: 0; */
+    transform: translateX(0);
+}
+
+.container-loginn.active.togglee-left {
+    transform: translateX(0);
+}
+
+.togglee-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container-loginn.active.togglee-right {
+    transform: translateX(200%);
+}
+
+.container-loginn h1 {
+    margin-bottom: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#h1a{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 140px;
+}
+
+@media (max-width:768px) {
+    .container-loginn h1 {
+        font-size: 28px;
+    }
+    #h1a{
+        font-size: 28px;
+    }
+}
+@media (max-width:640px) {
+    .container-loginn h1 {
+        font-size: 25px;
+    }
+    #h1a{
+        font-size: 25px;
+    }
+    .container-loginn input {
+        font-size: 13px;
+        height: 40px;
+    }
+    .container-loginn p{
+        font-size: 17px;
+    }
+}
+@media (max-width:600px) {
+    .container-loginn h1 {
+        font-size: 23px;
+    }
+    #h1a{
+        font-size: 23px;
+    }
+    .container-loginn input {
+        font-size: 13px;
+        height: 40px;
+    }
+    .container-loginn button{
+        font-size: 13px;
+    }
+}
+@media (max-width:560px) {
+    .container-loginn h1 {
+        font-size: 20px;
+    }
+    #h1a{
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .container-loginn input {
+        font-size: 12px;
+        height: 30px;
+    }
+    .container-loginn p{
+        font-size: 15px;
+    }
+    .container-loginn button{
+        font-size: 11px;
+        padding: 0 20px
+    }
+}
+@media (max-width:400px) {
+    .container-loginn h1 {
+        font-size: 18px;
+    }
+    #h1a{
+        font-size: 18px;
+    }
+    .container-loginn input {
+        font-size: 12px;
+        width: 150px;
+        height: 30px;
+    }
+    .container-loginn p{
+        font-size: 12px;
+    }
+    .container-loginn a{
+        font-size: 12px;
+    }
+    .container-loginn button{
+        font-size: 10px;
+        padding: 0 10px;
+    }
+}
